@@ -1,18 +1,15 @@
-namespace DesafioProjetoHospedagem.Models
+namespace trilha_net_explorando_desafio.Models;
+
+public class Suite
 {
-    public class Suite
+    public string Type { get; set; }
+    public int Capacity { get; set; }
+    public decimal DailyValue { get; set; }
+
+    public Suite(string type, int capacity, decimal dailyValue)
     {
-        public Suite() { }
-
-        public Suite(string tipoSuite, int capacidade, decimal valorDiaria)
-        {
-            TipoSuite = tipoSuite;
-            Capacidade = capacidade;
-            ValorDiaria = valorDiaria;
-        }
-
-        public string TipoSuite { get; set; }
-        public int Capacidade { get; set; }
-        public decimal ValorDiaria { get; set; }
+        Type = type;
+        Capacity = capacity;
+        DailyValue = dailyValue;
     }
 }
