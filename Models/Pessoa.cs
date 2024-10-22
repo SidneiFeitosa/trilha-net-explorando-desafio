@@ -1,21 +1,13 @@
-namespace DesafioProjetoHospedagem.Models;
+namespace trilha_net_explorando_desafio.Models;
 
-public class Pessoa
+public class Person
 {
-    public Pessoa() { }
+    public string Name { get; set; }
+    public string Surname { get; set; }
 
-    public Pessoa(string nome)
+    public Person(string name, string surname)
     {
-        Nome = nome;
+        Name = name;
+        Surname = surname;
     }
-
-    public Pessoa(string nome, string sobrenome)
-    {
-        Nome = nome;
-        Sobrenome = sobrenome;
-    }
-
-    public string Nome { get; set; }
-    public string Sobrenome { get; set; }
-    public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
 }
